@@ -1,0 +1,21 @@
+CartDAO
+===========================
+
+package eCommerce.DAO;
+
+import java.util.List;
+import eCommerce.model.CartItem;
+import eCommerce.model.Product;
+
+public interface CartDAO {
+	
+	public boolean addCartItem(CartItem CartItem);
+	public boolean deleteCartItem(CartItem CartItem);
+	public boolean updateCartItem(CartItem CartItem);
+	public CartItem getCartItem(int cartItemId );
+	
+	
+	public list<CartItem>listCartItems(String username);
+	
+	
+}
